@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Main Home</title>
+        <title>Main {{ $title }}</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -21,6 +21,10 @@
     <body>
         <header>
             <!-- place navbar here -->
+            @include('partials.navbar')
+              <div class="container mt-4">
+                @yield('container')
+              </div>
         </header>
         <main></main>
         <footer>
