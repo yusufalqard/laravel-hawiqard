@@ -2,9 +2,8 @@
 
 @section('container')
     <article>
-        <h2>Judul</h2>
-        <h5>Author</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reprehenderit facere commodi, ipsum eius aliquam eum dolorum nostrum voluptates? Non.</p>
+        <h2 class ="mb-5">{{ $post->title }}</h2>
+        {!! $post->body !!}
     </article>
 
     <a href="/posts">Kembali ke Halaman Posts</a>
