@@ -13,7 +13,10 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
+            //Relasi kategori ke multi post
             $table->foreignId('category_id');
+            //Relasi user ke multi post
+            $table->foreignId('user_id');
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('excerpt');
