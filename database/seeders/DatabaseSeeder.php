@@ -41,7 +41,7 @@ class DatabaseSeeder extends Seeder
             'slug' => 'rest-api'
         ]);
         
-        Post::factory(10)->create();
+        Post::factory(15)->create();
         // Post::create([
         //     'title' => 'Tips menjadi Front-End Developer',
         //     'slug' => 'tips-front-end-dev',

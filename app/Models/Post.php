@@ -13,6 +13,7 @@ class Post extends Model
     // Maka gunakan protected guarded
     protected $guarded = ['id'];
     //Hanya id yang dijaga tidak boleh diisi manual, selebihnya index tipe lain dapat diisi
+    protected $with = ['category','author'];
     public function category(){
         return $this->belongsTo(Category::class);
     }
