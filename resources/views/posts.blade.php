@@ -1,7 +1,7 @@
 @extends ('layouts.main')
 
 @section('container')
-<h1 class="mb-5">{{ $title }}</h1>
+    <h1 class="mb-5">{{ $title }}</h1>
 
 @if($posts->count())
 <div class="card mb-3">
@@ -44,7 +44,7 @@
                     </div>
                 </div>
             </div>
-        @endforeach
+            @endforeach
     </div>
 </div>
 
